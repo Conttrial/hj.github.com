@@ -434,7 +434,7 @@ footer h5:before{
     header{
         background: url("../images/story-bg1.jpg") no-repeat;
     }
-    header video{
+    header .bg>video{
         display: none;
     }
     header .bg img{
