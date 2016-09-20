@@ -6,6 +6,7 @@ var svg =$("svg");
 $(function(){
     if($(window).width()>=992){
         video.first().trigger("play");
+        setInterval("showcase()",40);
     }
 
 
@@ -43,6 +44,7 @@ $(function(){
         }
         if($(window).width()>992){
             $("header video.active").trigger("play");
+            setInterval("showcase()",40);
         }
     });
 
@@ -64,11 +66,11 @@ $(function(){
 });
 
 var showcase = function(){
-    var percent = video[index].currentTime/$("header video")[index].duration;
+    var percent = video[index].currentTime/video[index].duration;
     perimeter = Math.PI * 2 * 48;
     $("circle")[index].setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
 }
-setInterval("showcase()",40)
+
 
 
 
