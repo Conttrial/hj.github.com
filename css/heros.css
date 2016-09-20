@@ -24,19 +24,19 @@ h3{
     color: #00c3ff;
 }
 
-.header{
+header{
     position: relative;
     margin-bottom: -10%;
 }
-.header video{
+header video{
     position: absolute;
     display: none;
     width: 100%;
 }
-.header .bg h1{
+header .bg h1{
     display: none;
 }
-.header .bg img{
+header .bg img{
     display: none;
 }
 video.active{
@@ -286,13 +286,13 @@ svg.active{
     font-style: normal;
 }
 
-.bottom{
+footer{
     background: url(../images/bg-tmp-hero-mobile.jpg) no-repeat;
     background-size:cover;
     overflow: hidden;
     position: relative;
 }
-.bottom:before{
+footer:before{
     display: block;
     content: '';
     position: absolute;
@@ -309,22 +309,22 @@ svg.active{
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.bottom>div{
+footer>div{
     margin-bottom: 20px;
 }
-.bottom h1{
+footer h1{
     font-size: 6rem;
     font-style: italic;
     color: #fff;
 }
-.bottom h5{
+footer h5{
     font-size: 3rem;
     color: #fff;
     opacity: .6;
     width: 3rem;
     margin: 0 auto;
 }
-.bottom h5:after,.bottom h5:before{
+footer h5:after,footer h5:before{
     display: block;
     content: "";
     width: 260px;
@@ -334,10 +334,10 @@ svg.active{
     position: absolute;
     top: 50%;
 }
-.bottom h5:after{
+footer h5:after{
     left: 52%;
 }
-.bottom h5:before{
+footer h5:before{
     right: 52%;
 }
 
@@ -431,20 +431,20 @@ svg.active{
     }
 }
 @media (max-width: 992px){
-    .header{
+    header{
         background: url("../images/story-bg1.jpg") no-repeat;
     }
-    .header video{
+    header video{
         display: none;
     }
-    .header .bg img{
+    header .bg img{
         display: block;
         width: 100%;
     }
-    .header .bg{
+    header .bg{
         text-align: center;
     }
-    .header .bg h1{
+    header .bg h1{
         display: block;
         color: #f0edf2;
         font-size: 6rem;

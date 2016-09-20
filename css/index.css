@@ -10,14 +10,14 @@ body{
 a:hover{
     cursor: pointer;
 }
-.title{
+header{
     padding: 20px 0 40px 0;
 }
-.title h1{
+header h1{
     font-size: 7.2rem;
     font-style: italic;
 }
-.title p{
+header p{
     font-size: 2.8rem;
 }
 
