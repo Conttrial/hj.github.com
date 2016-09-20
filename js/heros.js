@@ -1,7 +1,7 @@
 /**
  * Created by hj on 2016/8/26.
 */
-var video =$(".header video");
+var video =$("header video");
 var svg =$("svg");
 $(function(){
     if($(window).width()>=992){
@@ -42,7 +42,7 @@ $(function(){
             video.trigger("pause");
         }
         if($(window).width()>992){
-            $(".header video.active").trigger("play");
+            $("header video.active").trigger("play");
         }
     });
 
@@ -64,7 +64,7 @@ $(function(){
 });
 
 var showcase = function(){
-    var percent = video[index].currentTime/$(".header video")[index].duration;
+    var percent = video[index].currentTime/$("header video")[index].duration;
     perimeter = Math.PI * 2 * 48;
     $("circle")[index].setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
 }
