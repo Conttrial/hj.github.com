@@ -32,6 +32,7 @@ $(function(){
 
 
     $(".showcase a").on("click", function () {
+        var index = index;
         video.filter(".active").load();
         svg[index].removeAttribute("class","active");
         video.eq($(this).index("a")).addClass("active").trigger("play").siblings("video").removeClass("active");
@@ -66,6 +67,7 @@ $(function(){
 });
 
 var showcase = function(){
+    var index = index;
     var percent = video[index].currentTime/video[index].duration;
     perimeter = Math.PI * 2 * 48;
     $("circle")[index].setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
