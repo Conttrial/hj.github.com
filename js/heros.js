@@ -65,7 +65,7 @@ $(function(){
 
 });
 
-var showcase = function(){
+function showcase(){
     var percent = video[index].currentTime/video[index].duration;
     perimeter = Math.PI * 2 * 48;
     $("circle")[index].setAttribute('stroke-dasharray', perimeter * percent + " " + perimeter * (1- percent));
