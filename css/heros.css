@@ -134,9 +134,7 @@ svg.active{
     overflow: hidden;
 }
 .details-bg img{
-    height: 100%;
-    position: absolute;
-    right: -15%;
+    width: 100%;
     display: none;
 }
 .details-bg video{
