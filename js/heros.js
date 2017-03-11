@@ -1,6 +1,3 @@
-/**
- * Created by hj on 2016/8/26.
-*/
 var video =$("header video");
 var svg =$("svg");
 $(function(){
